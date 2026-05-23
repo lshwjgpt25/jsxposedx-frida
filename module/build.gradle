@@ -48,7 +48,6 @@ task downloadFrida(type: Download) {
     }
     doFirst {
         gadgetDir.mkdirs()
-        src missingSources().keySet()
     }
     eachFile { f ->
         f.name = downloads[f.sourceURL.toString()]
